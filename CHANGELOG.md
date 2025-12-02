@@ -4,6 +4,91 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.120.0](https://github.com/0din-ai/promptfoo/compare/0.119.14...0.120.0) (2025-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace TypeScript enums with const objects ([#6428](https://github.com/0din-ai/promptfoo/issues/6428))
+
+### Features
+
+* Add web search assertion type ([#5111](https://github.com/0din-ai/promptfoo/issues/5111)) ([11c01cc](https://github.com/0din-ai/promptfoo/commit/11c01cc637efd6867a1e99e44bc8633d324ac66a))
+* changelog automation and validation ([#6252](https://github.com/0din-ai/promptfoo/issues/6252)) ([ee74c4a](https://github.com/0din-ai/promptfoo/commit/ee74c4ae7dc01c35dd52d835a19188f06a334a1a))
+* ecommerce plugin pack ([#6168](https://github.com/0din-ai/promptfoo/issues/6168)) ([152b1ff](https://github.com/0din-ai/promptfoo/commit/152b1ff3f3fdb6ca43a0a5718d463757f63a1814))
+* **examples:** add Strands Agents SDK example ([#6384](https://github.com/0din-ai/promptfoo/issues/6384)) ([28c3d58](https://github.com/0din-ai/promptfoo/commit/28c3d584f2f820de40a17e641aaf95809cf51e82))
+* migrate to ESM (ECMAScript Modules) ([#5594](https://github.com/0din-ai/promptfoo/issues/5594)) ([9cdf09b](https://github.com/0din-ai/promptfoo/commit/9cdf09b1c681454ed3fa047dee41a43fea48028a))
+* **providers:** add Anthropic structured outputs support ([#6226](https://github.com/0din-ai/promptfoo/issues/6226)) ([1b1b9d2](https://github.com/0din-ai/promptfoo/commit/1b1b9d274559a5ae7cefba1de0c6a732a3d6cbf0))
+* **providers:** add AWS Bedrock Converse API provider ([#6348](https://github.com/0din-ai/promptfoo/issues/6348)) ([8ab3f96](https://github.com/0din-ai/promptfoo/commit/8ab3f96f36eb054ba833206f463014a0f3aedc92))
+* **providers:** add Claude Agent SDK plugin support ([#6377](https://github.com/0din-ai/promptfoo/issues/6377)) ([d3e67f5](https://github.com/0din-ai/promptfoo/commit/d3e67f5409af88abc1723c23c3f799cdac47de69))
+* **providers:** add Claude Opus 4.5 model support ([#6339](https://github.com/0din-ai/promptfoo/issues/6339)) ([65f855d](https://github.com/0din-ai/promptfoo/commit/65f855d57a2d3e0a663ad86260308f899c375dd6))
+* **providers:** add Claude Opus 4.5 support for Anthropic, Google Vertex AI, and AWS Bedrock ([#6340](https://github.com/0din-ai/promptfoo/issues/6340)) ([95780cb](https://github.com/0din-ai/promptfoo/commit/95780cb32270ec7cca86e5722e204cae321942b5))
+* **providers:** add comprehensive Azure model support ([#6375](https://github.com/0din-ai/promptfoo/issues/6375)) ([2e53c08](https://github.com/0din-ai/promptfoo/commit/2e53c084b6a0f95b1f1f5ec1869bcba4bb961657))
+* **providers:** add Google Cloud Model Armor support to Vertex AI ([#6365](https://github.com/0din-ai/promptfoo/issues/6365)) ([0d1641b](https://github.com/0din-ai/promptfoo/commit/0d1641bb3699dcc36e66273c7105ba0b33f0b58d))
+* **providers:** add Groq reasoning models, Responses API, and built-in tools support ([#6231](https://github.com/0din-ai/promptfoo/issues/6231)) ([7cbddd0](https://github.com/0din-ai/promptfoo/commit/7cbddd0ee2fcce983654e07550a6a673b23e2291))
+* **providers:** add metadata extraction for OpenAI Responses API ([#6267](https://github.com/0din-ai/promptfoo/issues/6267)) ([f252f33](https://github.com/0din-ai/promptfoo/commit/f252f330f1faed5b8d46f8b32010c81d5f92edf7))
+* **providers:** add missing Claude Agent SDK options ([#6389](https://github.com/0din-ai/promptfoo/issues/6389)) ([d0d227c](https://github.com/0din-ai/promptfoo/commit/d0d227cc627c048efbfe44e224d6394d2ca5311e))
+* **providers:** add OpenAI ChatKit provider ([#6406](https://github.com/0din-ai/promptfoo/issues/6406)) ([433ac65](https://github.com/0din-ai/promptfoo/commit/433ac65589bf758901ed5388fec1a5e460d27c2d))
+* **providers:** add OpenAI Codex SDK provider ([#6321](https://github.com/0din-ai/promptfoo/issues/6321)) ([cc45c0f](https://github.com/0din-ai/promptfoo/commit/cc45c0fbe16814743dba09ba897c13c3687163d1))
+* **providers:** add verbosity and isReasoningModel config to azure:responses ([#6382](https://github.com/0din-ai/promptfoo/issues/6382)) ([e99b8a8](https://github.com/0din-ai/promptfoo/commit/e99b8a84ab4dbe8d0ffd9352a5176d9aaaaf0f36))
+* **providers:** add xAI Responses API with Agent Tools support ([#6386](https://github.com/0din-ai/promptfoo/issues/6386)) ([fad0fc8](https://github.com/0din-ai/promptfoo/commit/fad0fc893dfd62579e80fce7db3d0127c3b4e6b1))
+* **redteam:** update VLGuard to use original MIT-licensed dataset ([#5809](https://github.com/0din-ai/promptfoo/issues/5809)) ([dbabbaf](https://github.com/0din-ai/promptfoo/commit/dbabbaf1a4366ca6e5881fe2b30ecfd5aec4174f))
+* **server:** add server-side provider list customization ([#6124](https://github.com/0din-ai/promptfoo/issues/6124)) ([fdb792a](https://github.com/0din-ai/promptfoo/commit/fdb792a2d1908007786571d54a8d7f66fb54940c))
+* Share trace data to promptfoo cloud ([ce251ae](https://github.com/0din-ai/promptfoo/commit/ce251ae5cb16d9f65cf98d89c7ba4ea91778e3c4))
+* **util:** add support for loading tool definitions from Python/JavaScript files ([#6272](https://github.com/0din-ai/promptfoo/issues/6272)) ([41377d0](https://github.com/0din-ai/promptfoo/commit/41377d04d01b8b7abd9955619d29a77c2a8914d5))
+* vs code red team extension ([#6396](https://github.com/0din-ai/promptfoo/issues/6396)) ([406dc61](https://github.com/0din-ai/promptfoo/commit/406dc61c6f122e720283108aefeafbb21a6386a3))
+
+
+### Bug Fixes
+
+* add data URL support for vision models with local images ([#5725](https://github.com/0din-ai/promptfoo/issues/5725)) ([17442a8](https://github.com/0din-ai/promptfoo/commit/17442a85f230668a430076141492c777ecca4995))
+* **assertions:** use script output for file:// references in all assertion types ([#6253](https://github.com/0din-ai/promptfoo/issues/6253)) ([246dcd8](https://github.com/0din-ai/promptfoo/commit/246dcd8642803772ef53ab0b3c6ef471c7bee815))
+* **ci:** restore original tag format for GitHub releases ([#6402](https://github.com/0din-ai/promptfoo/issues/6402)) ([e49e5b8](https://github.com/0din-ai/promptfoo/commit/e49e5b80574b8f12a066ee834e160eacb3cd03f5))
+* **cli:** resolve eval command hanging by adding missing await calls ([#6422](https://github.com/0din-ai/promptfoo/issues/6422)) ([137231a](https://github.com/0din-ai/promptfoo/commit/137231a775259d37c5173606f6414851198cfcb2))
+* **cli:** restore commandLineOptions support + fix cloud auto-sharing ([#6190](https://github.com/0din-ai/promptfoo/issues/6190)) ([6df071f](https://github.com/0din-ai/promptfoo/commit/6df071f1373ceb6b1c31fb096a2e0c673cc8918c))
+* **code-scan:** remove redundant PR comment when no issues found ([#6317](https://github.com/0din-ai/promptfoo/issues/6317)) ([2a6e38c](https://github.com/0din-ai/promptfoo/commit/2a6e38c4e210c5bc6b1358fa5d4c48c82c3bec78))
+* **codeScan:** exit with code 0 when no files to scan ([#6316](https://github.com/0din-ai/promptfoo/issues/6316)) ([78e5c52](https://github.com/0din-ai/promptfoo/commit/78e5c526ee4ef240419eac2e8e51142b9f538ad6))
+* **deps:** bump posthog-node from 5.13.2 to 5.14.0 for sha1-hulud mitigation ([6a44eda](https://github.com/0din-ai/promptfoo/commit/6a44eda819f48273230853cc8692b821f8db14a0))
+* **deps:** replace xlsx with read-excel-file to fix high severity vulnerability ([#6357](https://github.com/0din-ai/promptfoo/issues/6357)) ([e6e2b98](https://github.com/0din-ai/promptfoo/commit/e6e2b980d71f662258e50832b4967f20de1b0585))
+* **deps:** resolve Express CVE-2024-51999 vulnerability ([#6457](https://github.com/0din-ai/promptfoo/issues/6457)) ([c2ef1ad](https://github.com/0din-ai/promptfoo/commit/c2ef1ad64fc2a0f4b0bc6a76dac751733b52a77f))
+* **deps:** update dependency @apidevtools/json-schema-ref-parser to v15 ([#6336](https://github.com/0din-ai/promptfoo/issues/6336)) ([614aa66](https://github.com/0din-ai/promptfoo/commit/614aa66d224e1333d4a736c0d25ec71a232875e9))
+* **deps:** update dependency @modelcontextprotocol/sdk to v1.23.0 ([#6441](https://github.com/0din-ai/promptfoo/issues/6441)) ([878682f](https://github.com/0din-ai/promptfoo/commit/878682f8a731f4173a82a29828d611e7ebe79b79))
+* **deps:** update dependency @modelcontextprotocol/sdk to v1.24.0 [security] ([#6463](https://github.com/0din-ai/promptfoo/issues/6463)) ([cfdffff](https://github.com/0din-ai/promptfoo/commit/cfdfffff518e02c29cec705f93ebdc2e24a07901))
+* **deps:** update dependency chalk to v5 ([#6310](https://github.com/0din-ai/promptfoo/issues/6310)) ([cb2bfb4](https://github.com/0din-ai/promptfoo/commit/cb2bfb463c38ad4cd798b67cd14aef4dcec0a21a))
+* **deps:** update dependency chokidar to v5 ([#6442](https://github.com/0din-ai/promptfoo/issues/6442)) ([6faa86b](https://github.com/0din-ai/promptfoo/commit/6faa86b98f129708d1d90c8cf17e0473fc1936b6))
+* **deps:** update dependency debounce to v3 ([#6445](https://github.com/0din-ai/promptfoo/issues/6445)) ([df4606f](https://github.com/0din-ai/promptfoo/commit/df4606fa260c4017e75848deb16add7b9b17e3de))
+* **deps:** update dependency jsdom to v27 ([#6446](https://github.com/0din-ai/promptfoo/issues/6446)) ([f7b5828](https://github.com/0din-ai/promptfoo/commit/f7b5828a736471dbdfe1e50a4765fabbc4182a6f))
+* **deps:** update dependency ora to v9 ([#6447](https://github.com/0din-ai/promptfoo/issues/6447)) ([e618896](https://github.com/0din-ai/promptfoo/commit/e618896ea7bedb70a0e490e2458426112dc860cc))
+* **deps:** update dependency swiper to v12 ([#6448](https://github.com/0din-ai/promptfoo/issues/6448)) ([2b7569b](https://github.com/0din-ai/promptfoo/commit/2b7569b2b6794e7630e2a427c0d059cc21b056da))
+* **deps:** update dependency uuid to v13 ([#6452](https://github.com/0din-ai/promptfoo/issues/6452)) ([9d6c21f](https://github.com/0din-ai/promptfoo/commit/9d6c21fc412dfe7623e1bf9d2b860a7e85302666))
+* **deps:** update dependency zod-validation-error to v5 ([#6455](https://github.com/0din-ai/promptfoo/issues/6455)) ([4c72b13](https://github.com/0din-ai/promptfoo/commit/4c72b13b0b559e07e8ce08e832613d697e2684bc))
+* **deps:** update node-forge to 1.3.2 to fix security vulnerability ([#6395](https://github.com/0din-ai/promptfoo/issues/6395)) ([2b96ee2](https://github.com/0din-ai/promptfoo/commit/2b96ee2caa17237317a5a8c70798af4677d8a7d4))
+* **evals:** do not truncate image responses in eval ([#6391](https://github.com/0din-ai/promptfoo/issues/6391)) ([d6fb07c](https://github.com/0din-ai/promptfoo/commit/d6fb07c1c45c2c8dce9f79812ab7d1f834af0e38))
+* Fix cache init ([#6467](https://github.com/0din-ai/promptfoo/issues/6467)) ([df2ae94](https://github.com/0din-ai/promptfoo/commit/df2ae94cc967cd6fc3df4e0d170bdcb4702c2e53))
+* **logging:** implement PROMPTFOO_LOG_DIR environment variable ([#6179](https://github.com/0din-ai/promptfoo/issues/6179)) ([f3db2d9](https://github.com/0din-ai/promptfoo/commit/f3db2d9421fe72cbd19efde4e888fb016c3c256d))
+* **mcp:** pass timeout configuration to MCP SDK calls ([#6394](https://github.com/0din-ai/promptfoo/issues/6394)) ([d05da44](https://github.com/0din-ai/promptfoo/commit/d05da44d2c33d2f7956c4b5b16a04a8304580c4b))
+* **modelaudit:** track scanner version and re-scan on version changes ([#6361](https://github.com/0din-ai/promptfoo/issues/6361)) ([f0e8065](https://github.com/0din-ai/promptfoo/commit/f0e80654b1b1a2d48f7f8ac92fdc73e2786767a5))
+* preserve all file:// references in vars context for runtime loading ([#6393](https://github.com/0din-ai/promptfoo/issues/6393)) ([55c553c](https://github.com/0din-ai/promptfoo/commit/55c553caf348ff4837bd8f0b28b0aed7374b7ff6))
+* prevent Node.js from hanging when importing promptfoo as a library ([#6351](https://github.com/0din-ai/promptfoo/issues/6351)) ([af857a3](https://github.com/0din-ai/promptfoo/commit/af857a3ed37e06d357d85c550b4fa3bf63b5d991))
+* **providers:** fix ChatKit echo behavior and concurrency issues ([#6420](https://github.com/0din-ai/promptfoo/issues/6420)) ([04df4a8](https://github.com/0din-ai/promptfoo/commit/04df4a8b730eeb82589a3ff743f95c7279a58fa3))
+* **providers:** improve ChatKit multi-step workflow support ([#6425](https://github.com/0din-ai/promptfoo/issues/6425)) ([ceef623](https://github.com/0din-ai/promptfoo/commit/ceef623af0c48f864f13bd3b29e9c63acd83160c))
+* **providers:** propagate agent errors in simulated-user provider ([#6251](https://github.com/0din-ai/promptfoo/issues/6251)) ([2378f71](https://github.com/0din-ai/promptfoo/commit/2378f71bcb06ee39e09f9243051ceea77af1b3a9))
+* **providers:** support function providers in defaultTest.options.provider and assertions ([#6174](https://github.com/0din-ai/promptfoo/issues/6174)) ([601f173](https://github.com/0din-ai/promptfoo/commit/601f1730cd83c858aaf845d7aadd69069d2395c4))
+* **redteam:** propagate abort signals through agentic strategy providers ([#6412](https://github.com/0din-ai/promptfoo/issues/6412)) ([49b96e7](https://github.com/0din-ai/promptfoo/commit/49b96e7417eead8b880646b5bec0d6dc7c0641d6))
+* **site:** add truncation marker to blog post ([#6392](https://github.com/0din-ai/promptfoo/issues/6392)) ([900fac2](https://github.com/0din-ai/promptfoo/commit/900fac28dda24001038d4b5a979a59cefdbd9271))
+* **webui:** prevent horizontal scrolling in metadata table ([#6178](https://github.com/0din-ai/promptfoo/issues/6178)) ([5d36d8d](https://github.com/0din-ai/promptfoo/commit/5d36d8d2ff836914f596892b2fc41a80e5b7804e))
+* **webui:** resolve Vitest timing issues causing test timeouts ([#6356](https://github.com/0din-ai/promptfoo/issues/6356)) ([353ab11](https://github.com/0din-ai/promptfoo/commit/353ab1183431c98ec2a625d0c8fb3e5a70cba408))
+
+
+### Reverts
+
+* "fix(deps): update dependency jsdom to v27" ([#6449](https://github.com/0din-ai/promptfoo/issues/6449)) ([1cd29ad](https://github.com/0din-ai/promptfoo/commit/1cd29ad68cf93ab3c7c40a75212ac6f4ca56bcbf))
+
+
+### Miscellaneous Chores
+
+* replace TypeScript enums with const objects ([#6428](https://github.com/0din-ai/promptfoo/issues/6428)) ([ae2b609](https://github.com/0din-ai/promptfoo/commit/ae2b609fe593d63f4b7ca51fb55f6822a44b0ce6))
+
 ## [0.119.14](https://github.com/promptfoo/promptfoo/compare/0.119.13...0.119.14) (2025-12-01)
 
 ### Features
